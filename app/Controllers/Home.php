@@ -8,4 +8,12 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+    public function login()
+    {
+        return view('auth/login');
+    }
+    public function arsiphrd()
+    {
+        return view('hrd/arsip');
+    }
 }

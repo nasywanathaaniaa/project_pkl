@@ -301,13 +301,10 @@
             </li><!-- End Forms Nav -->
 
             <li class="nav-item">
-                <a class="nav-link" href="arsip-surat">
-                    <i class="bi bi-grid"></i>
-                    <span>Arsip Surat</span>
+                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="arsip">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Arsip Surat</span>
                 </a>
             </li><!-- End Tables Nav -->
-
-
 
 
             <li class="nav-heading">Pages</li>
@@ -356,9 +353,11 @@
                 <div class="col-lg-8">
                     <div class="row">
 
-                        <!-- Sales Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card sales-card">
+          
+
+                        <!-- Recent Sales -->
+                        <div class="col-12">
+                            <div class="card recent-sales overflow-auto">
 
                                 <div class="filter">
                                     <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -367,70 +366,64 @@
                                             <h6>Filter</h6>
                                         </li>
 
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
+                                        <li><a class="dropdown-item" href="#">2022</a></li>
+                                        <li><a class="dropdown-item" href="#">2021</a></li>
+                                        <li><a class="dropdown-item" href="#">2020</a></li>
+                                        <li><a class="dropdown-item" href="#">2019</a></li>
+                                        <li><a class="dropdown-item" href="#">2018</a></li>
                                 </div>
 
                                 <div class="card-body">
-                                    <h5 class="card-title">Sales <span>| Today</span></h5>
+                                    <h5 class="card-title">Recent Sales <span>| Today</span></h5>
 
-                                    <div class="d-flex align-items-center">
-                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-cart"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>145</h6>
-                                            <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                                    <table class="table table-borderless datatable">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Tahun</th>
+                                                <th scope="col">Nama Lengkat</th>
+                                                <th scope="col">Asal Instansi</th>
+                                                <th scope="col">Tanggal Masuk</th>
+                                                <th scope="col">Tanggal Selesai</th>
+                                                <th scope="col">Surat Pendaftaran</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><a href="#">#2457</a></th>
+                                                <td>Nasywa Nathania</td>
+                                                <td><a href="#" class="text-primary">Universitas Lampung</a></td>
+                                                <td>26 Desember 2022</td>
+                                                <td>10 Februari 2023</td>
+                                                <td>SuratPKL.pdf</td>
+                                                <td><span class="badge bg-warning">Processed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">#2457</a></th>
+                                                <td>Sarah dwi </td>
+                                                <td><a href="#" class="text-primary">Universitas Lampung</a></td>
+                                                <td>26 Desember 2022</td>
+                                                <td>10 Februari 2023</td>
+                                                <td>SuratIzinPKL.docx</td>
+                                                <td><span class="badge bg-success">Approved</span></td>
+                                            </tr>
+                            
+                                        </tbody>
+                                    </table>
 
-                                        </div>
-                                    </div>
                                 </div>
 
                             </div>
-                        </div><!-- End Sales Card -->
+                        </div><!-- End Recent Sales -->
 
-                        <!-- Revenue Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card revenue-card">
-
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                        <li class="dropdown-header text-start">
-                                            <h6>Filter</h6>
-                                        </li>
-
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Revenue <span>| This Month</span></h5>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-currency-dollar"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>$3,264</h6>
-                                            <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!-- End Revenue Card -->
 
                     </div>
                 </div><!-- End Left side columns -->
 
                 <!-- Right side columns -->
                 <div class="col-lg-4">
+
+
 
                 </div><!-- End Right side columns -->
 
