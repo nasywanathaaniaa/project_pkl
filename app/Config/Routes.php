@@ -39,9 +39,10 @@ $routes->get('/', 'Home::index');
 
 //hrd
 $routes->get('arsip-surat', 'Home::arsiphrd');
+$routes->get('/suratmasuk', 'smhrdcontroller::index');
 
 //auth
-$routes->get('login-hrd', 'Home::login');
+$routes->get('login-hrd', 'smhrdcontroller::index');
 
 
 /*
